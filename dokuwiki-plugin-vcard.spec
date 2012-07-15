@@ -23,15 +23,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		dokudir		/usr/share/dokuwiki
 %define		plugindir	%{dokudir}/lib/plugins/%{plugin}
 
-# no pear deps
-%define		_noautopear	pear
-
-# exclude optional php dependencies
-%define		_noautophp	php-someext
-
-# put it together for rpmbuild
-%define		_noautoreq	%{?_noautophp} %{?_noautopear}
-
 %description
 This plugin lets you create vCard files on the fly in your wiki, which
 other users can download and add to their addressbook. With the folded
