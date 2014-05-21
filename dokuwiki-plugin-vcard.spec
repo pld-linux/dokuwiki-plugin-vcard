@@ -4,7 +4,7 @@
 Summary:	DokuWiki vCard/hCard plugin
 Name:		dokuwiki-plugin-%{plugin}
 Version:	20070516
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	http://tomas.valenta.cz/dokuwiki/vcard-plugin.zip
@@ -13,9 +13,9 @@ URL:		http://www.dokuwiki.org/plugin:vcard
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.520
 Requires:	dokuwiki >= 20061106
-Requires:	php-common >= 4:%{php_min_version}
-Requires:	php-date
-Requires:	php-pcre
+Requires:	php(core) >= %{php_min_version}
+Requires:	php(date)
+Requires:	php(pcre)
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
