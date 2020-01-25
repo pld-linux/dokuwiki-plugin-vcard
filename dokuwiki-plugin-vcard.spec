@@ -1,6 +1,5 @@
 %define		plugin		vcard
 %define		php_min_version 5.0.0
-%include	/usr/lib/rpm/macros.php
 Summary:	DokuWiki vCard/hCard plugin
 Name:		dokuwiki-plugin-%{plugin}
 Version:	20070516
